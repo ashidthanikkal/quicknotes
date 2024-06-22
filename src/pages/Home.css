@@ -1,0 +1,126 @@
+.input {
+    font-family: "SF Pro";
+    width: 90%;
+    padding: 0.675rem;
+    font-size: 1rem;
+    border: 1.5px solid #000;
+    border-radius: 0.5rem;
+    box-shadow: 2.5px 3px 0 #000;
+    outline: none;
+    transition: ease 0.25s;
+  }
+  
+  .input:focus {
+    box-shadow: 5.5px 7px 0 black;
+  }
+
+  /* pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.page-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.page-button.active {
+    background-color: #000000;
+    color: white;
+}
+
+.page-button:hover {
+    background-color: #d0d0d0;
+}
+/*filter button*/
+.filter-button {
+  background-color: #000000; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #525252; /* Darker shade for hover effect */
+}
+
+.filter-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(45, 45, 45, 0.5); /* Focus outline */
+}
+
+
+
+  /* loading  */
+  .spinner {
+    width: 44px;
+    height: 44px;
+    animation: spinner-y0fdc1 2s infinite ease;
+    transform-style: preserve-3d;
+   }
+   
+   .spinner > div {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    border: 2px solid #000000;
+   }
+   
+   .spinner div:nth-of-type(1) {
+    transform: translateZ(-22px) rotateY(180deg);
+   }
+   
+   .spinner div:nth-of-type(2) {
+    transform: rotateY(-270deg) translateX(50%);
+    transform-origin: top right;
+   }
+   
+   .spinner div:nth-of-type(3) {
+    transform: rotateY(270deg) translateX(-50%);
+    transform-origin: center left;
+   }
+   
+   .spinner div:nth-of-type(4) {
+    transform: rotateX(90deg) translateY(-50%);
+    transform-origin: top center;
+   }
+   
+   .spinner div:nth-of-type(5) {
+    transform: rotateX(-90deg) translateY(50%);
+    transform-origin: bottom center;
+   }
+   
+   .spinner div:nth-of-type(6) {
+    transform: translateZ(22px);
+   }
+   
+   @keyframes spinner-y0fdc1 {
+    0% {
+     transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+    }
+   
+    50% {
+     transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+    }
+   
+    100% {
+     transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+    }
+   }
+ 
+  @media screen and (min-width: 480px) {
+    .input {
+        width: 50%;
+    }
+  }
+  
