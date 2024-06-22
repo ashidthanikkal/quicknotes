@@ -1,5 +1,5 @@
 .card {
-    width: 315px;
+    width: 310px;
     height: 400px;
     margin: 0 auto;
     border-radius: 8px;
@@ -52,7 +52,7 @@
     text-align: center;
   }
   #code {
-    width: 270px;
+    width: 285px;
     height: 330px;
     resize: none;
     background-color: rgb(51, 51, 51);
